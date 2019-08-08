@@ -1,0 +1,80 @@
+{% load staticfiles%}
+body
+{
+    background: url("/static/images/bg-photo.jpg") no-repeat center center fixed;
+	background-size: cover;
+	font-size: 17px;
+}
+
+.femida
+{
+    background: url("/static/images/femida.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 300px;
+    padding-right: 0px
+}
+
+.nav-tabs li[class*="col-"]
+{
+    padding: 0px;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: 1300px){
+    .nav-tabs li[class*="col-"]{
+        font-size: 14px;
+    }
+}
+
+a[data-toggle*="tab"]:hover
+{
+    color: gray;
+}
+a[role*="tab"]
+{
+    color: black;
+}
+
+.py-3{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+footer{
+    background-color: #261505;
+    color: #ccc;
+    border-radius: 300px/40px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.navbar{
+    margin-bottom: 0;
+}
+
+.clear::after{
+    display: table;
+    content: '';
+    clear: both;
+}
+.chef{
+    position: relative;
+    width: 100%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+.chef div[class*='col']{ position: relative; z-index: 2; padding: 0; }
+.chef .info{ background: #fff; padding: 20px 20px 30px !important; }
+.chef .right{ float: right; }
+.chef .food.rotate2{ right: auto; left: -80px; }
+.chef img:not(.food){ outline: 1px solid #ccc; outline-offset: -5px; cursor: pointer; width: 100%; }
+.chef hr{
+    width: 90px;
+    height: 2px;
+    margin: 15px 0;
+    background-color: #ddd;
+}
+.carousel-control.right,.carousel-control.left{
+    background: none;
+}
