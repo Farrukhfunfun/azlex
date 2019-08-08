@@ -1,0 +1,359 @@
+{% load staticfiles%}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<link rel="stylesheet" href="{%static 'main.css'%}" type="text/css" media="screen" >
+	<script src="http://code.jivosite.com/widget.js" jv-id="hGI9DX25u4" async></script>
+	<title>Azlex</title>
+	<style type="text/css">
+		.carousel-inner .item img{
+			filter: brightness(50%);
+			object-fit: cover;
+			object-postion: center;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-default" stytle="margin-bottom: 0px" role="navigation">
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand"><img src='{% static "images/logo.png" %}' style="height: 24px; transform: scale(1.5); margin-right: 10px; display: inline-block;">Azlex</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li><a href="#contacts">Контакты</a></li>
+					<li><a href="#scope">Сферы деятельности</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="http://127.0.0.1:8000/en/">en</a></li>
+					<li><a href="http://127.0.0.1:8000/uz/">uz</a></li>
+					<li><a href="http://127.0.0.1:8000/">ru</a></li>
+					<li><a href="https://www.facebook.com/azlexlegalbureau/" style="padding: 0px"><img src='{% static "images/web-facebook.ico" %}' style="height: 40px; width: 40px"></a></li>
+					<li><a href="https://www.linkedin.com/in/ilkhom-azimov-0a7167115/" style="padding: 0px"><img src="{% static 'images/Linkedin.ico' %}" style="height: 40px; width: 40px"></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	 <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="container carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="{%static '/images/22.jpg'%}" alt="First slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>«Azlex Business Consulting Group»</h1>
+              <p>Наша фирма является одним из ведущих национально- правовых консультантов на рынке юридических услуг Узбекистана и Средней Азии</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="{%static '/images/Без имени-2.jpg'%}" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Наша команда</h1>
+              <p>Юристы Бюро являются высококвалифицированными специалистами в области права, обладают учеными степенями, опытом стажировки в РФ, США, Великобритании</p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="{%static '/images/11.jpg'%}" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Одна из наших особенностей</h1>
+              <p>У нас есть значительный опыт консультирования компаний в сфере информационных технологий и интернет-торговли</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+	<div class="container">
+		<ul class="nav nav-tabs" role="tablist">
+			<li class="active col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="#home" role="tab" data-toggle="tab">О НАС</a></li>
+			<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="#services" role="tab" data-toggle="tab">УСЛУГИ</a></li>
+			<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="#team" role="tab" data-toggle="tab">НАША КОМАНДА</a></li>
+			<li class="col-xs-6 col-sm-3 col-md-3 col-lg-3"><a href="#cap" role="tab" data-toggle="tab">КЛИЕНТЫ И ПАРТНЁРЫ<li></a></li></li>
+		</ul>
+
+	</div>
+	<div class="container py-3">
+		<div class="tab-content">
+			<div class="tab-pane active" role="tabpanel" id="home"><p>Адвокатское бюро «Azlex Business Consulting Group» («Бюро») было основано в 2009 году. Директором Бюро является опытный, высококвалифицированный адвокат, специалист в области Узбекистанского и международного права – Азимов Ильхом Улугбекович.</p>
+
+				<p>Адвокатское бюро «Azlex Business Consulting Group» является одним из ведущих национально- правовых консультантов на рынке юридических услуг Узбекистана и Средней Азии. Наше Бюро оказывает масштабную и всестороннюю юридическую поддержку крупным Узбекистанским и иностранным компаниям по широкому спектру правовых вопросов, связанных с ведением деятельности на территории Республики Узбекистан.</p>
+
+				<p>Бюро является главным консультантом лидеров различных сегментов рынка и экономики в целом, представителей среднего и крупного бизнеса, иностранных инвесторов, которые заинтересованы в появлении положительных перспектив выхода на узбекский рынок и активной реализации проектов на территории Республики Узбекистан.</p>
+
+				<p>Юристы Бюро являются высококвалифицированными специалистами в области права, обладают учеными степенями, опытом стажировки в РФ, США, Великобритании. Также, наши юристы имеют опыт работы в органах государственной власти РУз и правоохранительных органах, свободно владеют иностранными языками, обладают экспертными знаниями в области национального законодательства и международного права.</p>
+
+				<p>Юристы Бюро имеют опыт работы с международными юридическими фирмами, опытом структурирования иностранных инвестиционных проектов, создания совместных предприятий, покупки активов, составления международных контрактов, снижения юридических рисков инвестиций, налогового планирования, разрешения международных споров.</p>
+				<p>Среди клиентов Бюро международные компании, банки, иностранные представительства, акционерные общества, государственные компании, проекты, финансируемые МФИ.</p>
+				<p>Уникальность Бюро на рынке Узбекистана заключается в следующем:</p>
+				<ul>
+					<li>оказание высокопрофессиональных консалтинговых услуг</li>
+					<li>практическое решение проблем клиентов в государственных и других разрешительных инстанциях</li>
+					<li>понимание проблем клиентов, глубокое фокусирование</li>
+					<li>высокая юридическая техника работы персонала</li>
+					<li>использование лучшей международной юридической практики в снижении юридических рисков клиентов</li>
+					<li>возможность структурирования бизнеса клиентов для достижения максимальной эффективности их деятельности, с минимальными издержками</li>
+					<li>подготовка контрактов в сфере добычи нефти и газа</li>
+					<li>значительный опыт участия в проектах развития коммунального сектора</li>
+					<li>значительный опыт консультирования компаний в сфере информационных технологий и интернет-торговли</li>
+				</ul>
+			</div>
+			<div class="tab-pane" role="tabpanel" id="services">
+				<h3>Сотрудники Бюро готовы оперативно и квалифицированно проконсультировать и оказать правовую поддержку нашим Клиентам в следующих областях права:</h3>
+				<div class="col-md-6">
+					<ul>
+						<li>Антимонопольное законодательство</li>
+						<li>Банковское право</li>
+						<li>Рынки капитала</li>
+						<li>Налоговое прав</li>
+						<li>Финансовое право</li>
+						<li>Проектное финансирование</li>
+						<li>Коммерческое право</li>
+						<li>Договорное право</li>
+						<li>Международное право</li>
+						<li>ИТ и регулирование интернет торговли</li>
+						<li>Международные трудовые стандарты МОТ</li>
+						<li>Английское коммерческое право</li>
+						<li>Таможенное регулирование</li>
+						<li>Международный арбитраж</li>
+					</ul>
+				</div>
+				<div class="col-md-6">
+					<ul>
+						<li>Корпоративное право</li>
+						<li>Слияния и поглощения</li>
+						<li>Банкротство</li>
+						<li>Нефть и газ</li>
+						<li>Природоресурсное право</li>
+						<li>Покупка активов (due diligence)</li>
+						<li>Муниципальное и коммунальное право</li>
+						<li>Интеллектуальная собственность</li>
+						<li>Телеком</li>
+						<li>Трудовое право</li>
+						<li>Коммерческое законодательство России, Казахстана, ОАЭ</li>
+						<li>Международные закупки по стандартам МФИ (МБРР, ЕБРР, АБР и тд)</li>
+						<li>Хозяйственные споры</li>
+						<li>Переводы юридических документов</li>
+					</ul>
+				</div>
+			</div>
+			<div class="tab-pane" role="tabpanel" id="team">
+				{% for emp in employee %}
+					{% ifequal forloop.counter|divisibleby:"2" False %}
+						<div class="chef clear">
+							<div class="col-xs-12 col-sm-5 col-md-4 col-xl-3 fromTopIn">
+								<div class="img">
+									<div data-src='http://127.0.0.1:8000/media/{{emp.photo}}'>
+										<img class="full-width" src='http://127.0.0.1:8000/media/{{emp.photo}}'>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-7 col-md-8 col-xl-9 info fromRightIn">
+								<h2>{{emp.surename}} {{emp.name}} {{emp.second_name}}</h2>
+								<hr>
+								<div class="size16 light">
+									<p>Сферы практики:<br>{{emp.practice_area}}</p>
+									<p>Образование:<br>
+										{% for education in emp.edu_info.all %}
+											{{education.uni_name}} {{education.degree}}
+										{% endfor %}
+									</p>
+									<p>Карьера:<br>
+										{{emp.experience}}
+									</p>
+									<p>Языки:<br>{{emp.languages}}</p>
+								</div>
+								<div class="size16 light mt10">
+									<p>E-mail:<br>{{emp.email}}</p>
+								</div>
+							</div>
+						</div>
+					{% endifequal %}
+					{% ifequal forloop.counter|divisibleby:"2" True %}
+						<div class="chef clear">
+							<div class="col-xs-12 col-sm-7 col-md-8 col-xl-9 info fromRightIn">
+								<h2>{{emp.surename}} {{emp.name}} {{emp.second_name}}</h2>
+								<hr>
+								<div class="size16 light">
+									<p>Сферы практики:<br>{{emp.practice_area}}</p>
+									<p>Образование:<br>
+										{% for education in emp.edu_info.all %}
+											{{education.uni_name}} {{education.degree}}
+										{% endfor %}
+									</p>
+									<p>Карьера:<br>
+										{{emp.experience}}
+									</p>
+									<p>Языки:<br>{{emp.languages}}</p>
+								</div>
+								<div class="size16 light mt10">
+									<p>E-mail:<br>{{emp.email}}</p>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-5 col-md-4 col-xl-3 fromTopIn">
+								<div class="img">
+									<div data-src='http://127.0.0.1:8000/media/{{emp.photo}}'>
+										<img class="full-width" src='http://127.0.0.1:8000/media/{{emp.photo}}'>
+									</div>
+								</div>
+							</div>
+						</div>
+					{% endifequal %}
+				<br>
+				{%endfor%}
+			</div>
+			<div class="tab-pane" role="tabpanel" id="cap">
+				<h3>Клиенты</h3>
+				<ul>
+					<li>Консультируем крупнейшие ИТ компании на рынке (click.uz, arba.uz) по всем вопросам их деятельности</li>
+
+					<li>Участие в переговорах по созданию СП на сумму 250 млн долл США в сфере производства автомобилей</li>
+
+					<li>Участие в переговорах заключению договоров проектного финансирования, с участием крупнейшего банка развития Южной </li>Кореи, на общую сумму свыше 100 млн долларов США
+
+					<li>Консультировали подрядчика (Италия) для подготовки проектно-сметной документации для крупнейшей российской нефтегазовой </li>компании, включая вопросы открытия постоянного учреждения
+
+					<li>Консультировали крупнейший российский инвестиционных банк по покупке пакетов акций крупных местных акционерных обществ</li>
+
+					<li>Консультировали крупную французскую электротехническую компанию компании по вопросу открытия представительства в </li>Ташкенте
+
+					<li>Консультировали представительство крупной французской фармацевтической компании по вопросам заключения текущих </li>договоров и др
+
+					<li>Консультировали дочернюю компании крупнейшего немецкого электротехнического концерна по вопросам слияния и поглощения</li>
+
+					<li>Консультировали по вопросам регистрации и лицензирования крупнейшего местного акционерного банка</li>
+
+					<li>Консультировали коммунальные проекты, финансируемые ЕБРР, МБРР, АБР</li>
+
+					<li>другие</li>
+				</ul>
+
+
+
+				<h3>Партнеры</h3>
+
+				<h4>Нашими деловыми партнерами являются:</h4>
+				<ul>
+
+					<li>РФ — Московская коллегия адвокатов</li>
+
+					<li>Юридическая компания «Gemix» (РФ)</li>
+
+					<li>Юридическая компания «BUCZYŃSKI Adwokacka S.K.A.» (Польша)</li>
+
+					<li>Юридическая компания “Goerlitz & Partners” (Германия)</li>
+
+					<li>Юридическая фирма “Thompson Knight” (США)</li>
+
+					<li>Ведущая аудиторская фирма «Марикон Аудит» (Узбекистан)</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container" style="padding-bottom: 30px">
+		<div id="scope" class="row">
+			<h3 class="text-center">Сферы деятельности</h3>
+			<div class="col-md-3">
+				<ul>
+					<li>Антимонопольное законодательство</li>
+					<li>Банковское право</li>
+					<li>Рынки капитала</li>
+					<li>Налоговое право</li>
+					<li>Финансовое право</li>
+					<li>Проектное финансирование</li>
+					<li>Коммерческое право</li>
+					<li>Договорное право</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<li>Международное право</li>
+					<li>Корпоративное право</li>
+					<li>Слияния и поглощения</li>
+					<li>Банкротство</li>
+					<li>Нефть и газ</li>
+					<li>Природоресурсное право;</li>
+					<li>Покупка активов(duediligence)</li>
+					<li>Муниципальное и коммунальное право</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<li>Интеллектуальная собственность</li>
+					<li>Телеком</li>
+					<li>ИТ и регулирование интернет торговли</li>
+					<li>Трудовое право</li>
+					<li>Международные трудовые стандарты МОТ</li>
+					<li>Коммерческое законодательство</li>
+				</ul>
+			</div>
+			<div class="col-md-3">
+				<ul>
+					<li>Английское коммерческое право</li>
+					<li>Международные закупки по стандартам МФИ (МБРР, ЕБРР, АБР и т.д.)</li>
+					<li>Таможенное регулирование</li>
+					<li>Хозяйственные споры</li>
+					<li>Международный арбитраж</li>
+					<li>Переводы юридических документов</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<footer id="contacts" class="page-footer font-small teal py-3">
+	  <div class="container text-center text-md-left">
+	    <div class="row">
+	      <div class="col-md-4">
+	        <h4 class="text-uppercase">Адрес <i class="glyphicon glyphicon-map-marker"></i></h4>
+	        <p>100047, Uzbekistan, Tashkent,<br> S.Azimov street, 52А, 3rd floor</p>
+	      </div>
+	      <div class="col-md-4">
+	        <h4 class="text-uppercase">Cоцсети <i class="glyphicon glyphicon-send"></i></h4>
+	        <p><a href="https://www.linkedin.com/in/ilkhom-azimov-0a7167115/" style="padding: 0px"><img src="{% static 'images/Linkedin.ico' %}" style="height: 40px; width: 40px"></a>
+	        <a href="https://www.facebook.com/azlexlegalbureau/" style="padding: 0px"><img src='{% static "images/web-facebook.ico" %}' style="height: 40px; width: 40px"></a></p>
+	      </div>
+	      <div class="col-md-4">
+	        <h4 class="text-uppercase">Контакты <i class="glyphicon glyphicon-earphone"></i></h4>
+	        <p>Телефон: (998-71) 233-2052<br>
+	        	Факс: (998-71) 233-2052<br>
+	        	Email: info@azlex.uz</p>
+	      </div>
+	    </div>
+	  </div>
+	  <div class="footer-copyright text-center">© Azlex адвокатское бюро 2009-2019</div>
+	</footer>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+</body>
+</html>
